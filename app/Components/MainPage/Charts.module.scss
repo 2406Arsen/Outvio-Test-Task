@@ -1,0 +1,83 @@
+.charts {
+	max-width: 1000px;
+	width: 100%;
+	margin-top: 10px;
+	&__tabs {
+		display: flex;
+		border: 1px solid #d2d2d2;
+		&__tab {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 10px 0;
+			align-items: center;
+			&:hover,
+			&__active {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				padding: 10px 0;
+				align-items: center;
+				background-color: #da8d8d;
+				transition: 0.2s ease-in-out;
+				color: white;
+			}
+		}
+	}
+}
+
+.switchCharts {
+	display: flex;
+	justify-content: center;
+	grid-column-gap: 25px;
+	margin-top: 10px;
+	> span {
+		background-color: #47a17f;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3px 6px;
+		border: 1px solid #47a17f;
+		cursor: pointer;
+		&:hover {
+			color: #47a17f;
+			background-color: white;
+			transition: 0.2s ease-in-out;
+		}
+		&:active {
+			border: none;
+		}
+	}
+}
+
+.rankedChartsControls {
+	display: flex;
+	align-items: center;
+	max-height: 56px;
+	.switchRankedCharts {
+		display: flex;
+		justify-content: center;
+		max-height: 56px;
+		grid-column-gap: 10px;
+		> span {
+			background-color: #47a17f;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 5.5px;
+			border: 1px solid #47a17f;
+			cursor: pointer;
+			&:hover {
+				color: #47a17f;
+				background-color: white;
+				transition: 0.2s ease-in-out;
+			}
+			&:active {
+				border: none;
+			}
+		}
+	}
+}
